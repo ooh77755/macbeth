@@ -1928,6 +1928,7 @@ GameObject:
   - component: {fileID: 360207125}
   - component: {fileID: 360207128}
   - component: {fileID: 360207129}
+  - component: {fileID: 360207130}
   m_Layer: 0
   m_Name: Kraken
   m_TagString: Untagged
@@ -2156,6 +2157,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   silhouette: {fileID: 1362120685}
   canvas: {fileID: 606550791}
+--- !u!114 &360207130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360207124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3ef1866e0dc5e479e653bceba0c4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420031}
 --- !u!1 &395313408
 GameObject:
   m_ObjectHideFlags: 0
