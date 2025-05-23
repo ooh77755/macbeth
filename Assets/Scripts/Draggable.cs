@@ -10,9 +10,14 @@ public class Draggable : MonoBehaviour
     int sortingOrder;
 
     public bool isCorrectItem;
+    public static bool IsDragging { get; private set; }
+
+    public GameObject linkedImage;
+
 
     private void Start()
     {
+        linkedImage.SetActive(false);
         col = GetComponent<Collider2D>();
         sR = GetComponent<SpriteRenderer>();
         sortingOrder = sR.sortingOrder;
@@ -20,9 +25,11 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseDown()
     {
+        IsDragging = true;
         startDragPos = transform.position;
         sR.sortingOrder = 20;
         transform.position = GetMousePositionInWorldSpace();
+        linkedImage.SetActive(true);
     }
 
     private void OnMouseDrag()
@@ -32,6 +39,8 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
+        IsDragging = false;
+        linkedImage.SetActive(false);
         sR.sortingOrder = sortingOrder;
         col.enabled = false;
         Collider2D hitCollider = Physics2D.OverlapPoint(transform.position);

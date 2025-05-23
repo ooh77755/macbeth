@@ -9,8 +9,11 @@ public class ShowHighlight : MonoBehaviour
 
     private void OnMouseOver()
     {
-        silhouette.SetActive(true);
-        canvas.SetActive(true);
+        if(!Draggable.IsDragging)
+        {
+            silhouette.SetActive(true);
+            canvas.SetActive(true);
+        }
     }
 
     private void OnMouseExit()
