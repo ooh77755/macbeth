@@ -8046,6 +8046,7 @@ GameObject:
   - component: {fileID: 1646246706}
   - component: {fileID: 1646246708}
   - component: {fileID: 1646246707}
+  - component: {fileID: 1646246709}
   m_Layer: 0
   m_Name: Kraken_s
   m_TagString: Untagged
@@ -8277,6 +8278,20 @@ PolygonCollider2D:
       - {x: -0.995, y: -2.09}
       - {x: -0.59499997, y: -2}
       - {x: -0.475, y: -1.9499999}
+--- !u!114 &1646246709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646246704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a939b368ff7244b90268d3c795380a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  silhouette: {fileID: 214945719}
+  canvas: {fileID: 606550791}
 --- !u!1 &1650857013
 GameObject:
   m_ObjectHideFlags: 0
