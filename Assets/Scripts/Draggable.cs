@@ -5,17 +5,22 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
     Collider2D col;
-
     Vector3 startDragPos;
+
+    SpriteRenderer sR;
+    int sortingOrder;
 
     private void Start()
     {
         col = GetComponent<Collider2D>();
+        sR = GetComponent<SpriteRenderer>();
+        sortingOrder = sR.sortingOrder;
     }
 
     private void OnMouseDown()
     {
         startDragPos = transform.position;
+        sR.sortingOrder = 20;
         transform.position = GetMousePositionInWorldSpace();
     }
 
@@ -26,6 +31,7 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
+        sR.sortingOrder = sortingOrder;
         col.enabled = false;
         Collider2D hitCollider = Physics2D.OverlapPoint(transform.position);
         col.enabled = true;
