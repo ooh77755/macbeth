@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Fungus;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     int correctDrops = 0;
+    int totalDrops = 0;
     public int winThreshold = 4;
 
     public Flowchart fC;
@@ -21,12 +23,22 @@ public class GameManager : MonoBehaviour
 
     public void RegisterDrop(bool isCorrect)
     {
-        if(isCorrect)
+        totalDrops++;
+
+        if (isCorrect)
         {
             correctDrops++;
-            if(correctDrops >= winThreshold)
+        }
+
+        if(totalDrops>=winThreshold)
+        {
+            if (correctDrops >= winThreshold)
             {
                 WinGame();
+            }
+            else
+            {
+                RestartScene();
             }
         }
     }
@@ -34,5 +46,16 @@ public class GameManager : MonoBehaviour
     private void WinGame()
     {
         fC.ExecuteBlock("Win");
+    }
+
+    private void RestartScene()
+    {
+        fC.ExecuteBlock("Lose");
+        Invoke("LoadScene", 2);
+    }
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }
