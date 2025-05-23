@@ -6,8 +6,9 @@ public class DropZone : MonoBehaviour, ICardDropArea
 {
     public void OnCardDrop(Draggable card)
     {
+        GameManager.Instance.RegisterDrop(card.isCorrectItem);
+        
         Destroy(card.gameObject);
         card.transform.position = transform.position;
-        print("placed");
     }
 }

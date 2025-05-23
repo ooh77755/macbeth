@@ -6,9 +6,10 @@ public class Draggable : MonoBehaviour
 {
     Collider2D col;
     Vector3 startDragPos;
-
     SpriteRenderer sR;
     int sortingOrder;
+
+    public bool isCorrectItem;
 
     private void Start()
     {
