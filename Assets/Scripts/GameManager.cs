@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     int correctDrops = 0;
     public int winThreshold = 4;
+
+    public Flowchart fC;
 
     private void Awake()
     {
@@ -30,6 +33,6 @@ public class GameManager : MonoBehaviour
 
     private void WinGame()
     {
-        print("WIN!!");
+        fC.ExecuteBlock("Win");
     }
 }
