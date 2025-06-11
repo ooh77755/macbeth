@@ -5114,7 +5114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffe9162ac23d034facd88e976265b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCorrectItem: 0
+  isCorrectItem: 1
   linkedImage: {fileID: 255981046}
 --- !u!61 &682199763
 BoxCollider2D:
