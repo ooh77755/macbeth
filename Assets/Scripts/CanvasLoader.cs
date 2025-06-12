@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class CanvasLoader : MonoBehaviour
 {
-    [SerializeField] GameObject recipeCanvas;
+    [SerializeField] GameObject canvas;
     bool isVisible = false;
 
     public void OnMouseDown()
     {
         if(!isVisible)
         {
-            recipeCanvas.SetActive(true);
+            canvas.SetActive(true);
             isVisible = true;
         }
 
         else if(isVisible)
         {
-            recipeCanvas.SetActive(false);
+            canvas.SetActive(false);
             isVisible = false;
         }
     }
