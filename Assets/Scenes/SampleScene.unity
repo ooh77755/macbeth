@@ -2028,7 +2028,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 824366026259bd446bc78e6270880b3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2199,6 +2199,7 @@ GameObject:
   - component: {fileID: 2009266988}
   - component: {fileID: 2009266990}
   - component: {fileID: 2009266991}
+  - component: {fileID: 2009266992}
   m_Layer: 0
   m_Name: Recipe on table
   m_TagString: Untagged
@@ -2312,6 +2313,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6645627, y: 1.9274654}
   m_EdgeRadius: 0
+--- !u!114 &2009266992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009266987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb809b5b474321f4f8df3950a39b4d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  silhouette: {fileID: 1746004178}
 --- !u!4 &2082632566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4737997769385523709, guid: 22b46fa3023b43749bba2a32afb2f0ff, type: 3}
