@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MusicPlayer : MonoBehaviour
+{
+
+    private void Start()
+    {
+        DontDestroyOnLoad(this);
+        GetComponent<AudioSource>().volume = 0.2f;
+    }
+}
