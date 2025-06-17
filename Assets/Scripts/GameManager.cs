@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                RestartScene();
+                RestartSceneSlow();
             }
         }
     }
@@ -48,14 +48,19 @@ public class GameManager : MonoBehaviour
         fC.ExecuteBlock("Win");
     }
 
-    private void RestartScene()
+    public void RestartSceneFast()
+    {
+        SceneManager.LoadScene(1);
+    }
+    
+    private void RestartSceneSlow()
     {
         fC.ExecuteBlock("Lose");
-        Invoke("LoadScene", 2);
+        //Invoke("LoadScene", 2);
     }
 
-    void LoadScene()
-    {
-        SceneManager.LoadScene(0);
-    }
+    //void LoadScene()
+    //{
+    //    SceneManager.LoadScene(1);
+    //}
 }

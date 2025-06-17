@@ -661,14 +661,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hecate''s angry.
+  m_text: 'Round about the cauldron go;
 
-    Time to fix that.
-
-    Concoct her potion.
-
-    Beguile
-    Macbeth.'
+    In the poison''d entrails throw...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ee29b3141f74f714b9d563974d18f2f6, type: 2}
   m_sharedMaterial: {fileID: 568485752564825225, guid: ee29b3141f74f714b9d563974d18f2f6, type: 2}
@@ -701,7 +696,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -799,7 +794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.36, y: -4.16}
+  m_AnchoredPosition: {x: -0.36, y: -5.19}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1117691929
