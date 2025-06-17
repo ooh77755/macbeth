@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DropZone
   - Fire
+  - Arrow
   layers:
   - Default
   - TransparentFX

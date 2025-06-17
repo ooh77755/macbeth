@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int winThreshold = 4;
 
     public Flowchart fC;
+    public GameObject arrow;
 
     private void Awake()
     {
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     private void RestartSceneSlow()
     {
         fC.ExecuteBlock("Lose");
+        arrow.SetActive(true);
         //Invoke("LoadScene", 2);
     }
 
