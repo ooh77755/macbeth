@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public Flowchart fC;
     public GameObject arrow;
+    public GameObject thanksBlock;
+    public GameObject tutCanvas;
 
     private void Awake()
     {
@@ -47,6 +49,8 @@ public class GameManager : MonoBehaviour
     private void WinGame()
     {
         fC.ExecuteBlock("Win");
+        Destroy(tutCanvas);
+        Invoke("LoadScene", 1);
     }
 
     public void RestartSceneFast()
@@ -58,11 +62,11 @@ public class GameManager : MonoBehaviour
     {
         fC.ExecuteBlock("Lose");
         arrow.SetActive(true);
-        //Invoke("LoadScene", 2);
+        
     }
 
-    //void LoadScene()
-    //{
-    //    SceneManager.LoadScene(1);
-    //}
+    void LoadScene()
+    {
+        thanksBlock.SetActive(true);
+    }
 }
