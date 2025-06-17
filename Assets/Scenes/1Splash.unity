@@ -661,9 +661,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Round about the cauldron go;
+  m_text: '"Round about the cauldron go;
 
-    In the poison''d entrails throw...'
+    In the poison''d entrails throw..."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ee29b3141f74f714b9d563974d18f2f6, type: 2}
   m_sharedMaterial: {fileID: 568485752564825225, guid: ee29b3141f74f714b9d563974d18f2f6, type: 2}
@@ -794,7 +794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.36, y: -5.19}
+  m_AnchoredPosition: {x: -10.02, y: 0.53}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1117691929
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0955763, y: 0.94949675, z: 1.0955725, w: 0.8764595}
+  m_margin: {x: 9.193588, y: 0.94949675, z: 1.0955725, w: 0.8764595}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1168,7 +1168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.85}
+  m_AnchoredPosition: {x: 0.42, y: 3.65}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2047566157
@@ -1187,7 +1187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2047566158
 SpriteRenderer:
   m_ObjectHideFlags: 0
