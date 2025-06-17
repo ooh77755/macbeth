@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     private void RestartSceneSlow()
     {
         fC.ExecuteBlock("Lose");
+        Destroy(tutCanvas);
         arrow.SetActive(true);
         
     }
