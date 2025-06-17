@@ -1542,8 +1542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.187}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.5, y: 222}
-  m_SizeDelta: {x: -716.4864, y: -439.3964}
+  m_AnchoredPosition: {x: 6.5, y: 211.88803}
+  m_SizeDelta: {x: -729.7113, y: -493.1479}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002435576
 MonoBehaviour:
@@ -1639,7 +1639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1044137603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2435,7 +2435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4293823, y: 221.97925}
+  m_AnchoredPosition: {x: 4.4293823, y: 212.97925}
   m_SizeDelta: {x: 254.9405, y: 261.8632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1460575186
@@ -2460,12 +2460,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Read recipe
 
-
     Identify ingredients
 
-
     Drag / drop into cauldron
-
 
     Messed
     up? Press ''Restart'''
@@ -3904,11 +3901,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2492302652907282554, guid: f44ae999c80941c4494a3f70480c85ff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 20
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 2492302652907282554, guid: f44ae999c80941c4494a3f70480c85ff, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -17
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 2492302653308774244, guid: f44ae999c80941c4494a3f70480c85ff, type: 3}
       propertyPath: m_fontSize
