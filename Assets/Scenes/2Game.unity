@@ -128,6 +128,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1219144063296809317, guid: 6f97c7229a922f846b96f8aa4aacfa64, type: 3}
   m_PrefabInstance: {fileID: 1219144063299252341}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &24433932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6872967466127753661, guid: c8277ea5660d8e040bc46bfcfd6d6df7, type: 3}
+  m_PrefabInstance: {fileID: 6872967464692051174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &24433938
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24433932}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.27, y: 3.62}
+    newSize: {x: 5.27, y: 3.62}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.27, y: 3.62}
+  m_EdgeRadius: 0
 --- !u!4 &82611439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 469247942220427576, guid: 000be5603953b7143af2041755e5d07d, type: 3}
@@ -1583,6 +1614,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winThreshold: 4
   fC: {fileID: 779359478}
+--- !u!1 &849788635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3487048642470667096, guid: 3155d4e3182762b48998af6d6cacdc42, type: 3}
+  m_PrefabInstance: {fileID: 3487048640892459112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &849788641
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849788635}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17648458, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.31, y: 4.22}
+    newSize: {x: 5.31, y: 4.22}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.9570303, y: 4.22}
+  m_EdgeRadius: 0
 --- !u!4 &885204399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1291441484820751097, guid: ac3310aeb29207546ba217d536593306, type: 3}
@@ -2241,6 +2303,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9066e0eac1abe04594e62120548e106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1544863287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1657656872929920943, guid: e07d177522e164742996c3e9e6bd0f96, type: 3}
+  m_PrefabInstance: {fileID: 1657656873828392499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1544863293
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544863287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.73, y: 2.31}
+    newSize: {x: 2.73, y: 2.31}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.73, y: 2.31}
+  m_EdgeRadius: 0
 --- !u!4 &1549611059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578164000940326720, guid: e872d450fb495ff4a9cbe8ed204d3b1b, type: 3}
@@ -3337,7 +3430,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manticore
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1657656872929920914, guid: e07d177522e164742996c3e9e6bd0f96, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e07d177522e164742996c3e9e6bd0f96, type: 3}
 --- !u!1001 &2318766937098396824
 PrefabInstance:
@@ -3609,7 +3703,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3487048642470667100, guid: 3155d4e3182762b48998af6d6cacdc42, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3155d4e3182762b48998af6d6cacdc42, type: 3}
 --- !u!1001 &3922230490099594059
 PrefabInstance:
@@ -3869,7 +3964,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6872967466127753606, guid: c8277ea5660d8e040bc46bfcfd6d6df7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8277ea5660d8e040bc46bfcfd6d6df7, type: 3}
 --- !u!1001 &7242828568148700103
 PrefabInstance:

@@ -6,15 +6,21 @@ public class RecipeCanvasScript : MonoBehaviour
 {
     [SerializeField] GameObject ingredients;
 
-    private void Update()
+    private void OnEnable()
     {
-        if(this.enabled)
+        BoxCollider2D[] allBoxCols = ingredients.GetComponentsInChildren<BoxCollider2D>();
+        foreach (BoxCollider2D boxCol in allBoxCols)
         {
-            BoxCollider2D[] allBoxCols = ingredients.GetComponentsInChildren<BoxCollider2D>();
-            foreach(BoxCollider2D boxCol in allBoxCols)
-            {
-                boxCol.enabled = false;
-            }
+            boxCol.enabled = false;
+        }
+    }
+
+    private void OnDisable()
+    {
+        BoxCollider2D[] allBoxCols = ingredients.GetComponentsInChildren<BoxCollider2D>();
+        foreach (BoxCollider2D boxCol in allBoxCols)
+        {
+            boxCol.enabled = true;
         }
     }
 }
